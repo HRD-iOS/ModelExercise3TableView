@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A427A031BF1E887007BFEAB /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A427A021BF1E887007BFEAB /* CustomTableViewController.m */; };
+		9A427A071BF1EA03007BFEAB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A427A061BF1EA03007BFEAB /* Person.m */; };
+		9A427A0A1BF1F264007BFEAB /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A427A091BF1F264007BFEAB /* CustomTableViewCell.m */; };
+		9A427A131BF1F5D8007BFEAB /* PersonDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A427A121BF1F5D8007BFEAB /* PersonDetail.m */; };
 		9A70D3821BF1DBDE001DF808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70D3811BF1DBDE001DF808 /* main.m */; };
 		9A70D3851BF1DBDE001DF808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70D3841BF1DBDE001DF808 /* AppDelegate.m */; };
 		9A70D3881BF1DBDE001DF808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A70D3871BF1DBDE001DF808 /* ViewController.m */; };
@@ -16,6 +20,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A427A011BF1E887007BFEAB /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewController.h; path = ../CustomTableViewController.h; sourceTree = "<group>"; };
+		9A427A021BF1E887007BFEAB /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewController.m; path = ../CustomTableViewController.m; sourceTree = "<group>"; };
+		9A427A051BF1EA03007BFEAB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9A427A061BF1EA03007BFEAB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9A427A081BF1F264007BFEAB /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableViewCell.h; path = ../CustomTableViewCell.h; sourceTree = "<group>"; };
+		9A427A091BF1F264007BFEAB /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableViewCell.m; path = ../CustomTableViewCell.m; sourceTree = "<group>"; };
+		9A427A111BF1F5D8007BFEAB /* PersonDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonDetail.h; sourceTree = "<group>"; };
+		9A427A121BF1F5D8007BFEAB /* PersonDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonDetail.m; sourceTree = "<group>"; };
 		9A70D37D1BF1DBDE001DF808 /* Exercise3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A70D3811BF1DBDE001DF808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A70D3831BF1DBDE001DF808 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +51,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		196DE8921BF38320007A3A34 /* CustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A427A111BF1F5D8007BFEAB /* PersonDetail.h */,
+				9A427A121BF1F5D8007BFEAB /* PersonDetail.m */,
+			);
+			name = CustomViewController;
+			sourceTree = "<group>";
+		};
+		9A427A0C1BF1F34A007BFEAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A427A051BF1EA03007BFEAB /* Person.h */,
+				9A427A061BF1EA03007BFEAB /* Person.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9A427A0D1BF1F362007BFEAB /* CustomTable */ = {
+			isa = PBXGroup;
+			children = (
+				9A427A081BF1F264007BFEAB /* CustomTableViewCell.h */,
+				9A427A091BF1F264007BFEAB /* CustomTableViewCell.m */,
+				9A427A011BF1E887007BFEAB /* CustomTableViewController.h */,
+				9A427A021BF1E887007BFEAB /* CustomTableViewController.m */,
+			);
+			name = CustomTable;
+			sourceTree = "<group>";
+		};
 		9A70D3741BF1DBDE001DF808 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +99,9 @@
 		9A70D37F1BF1DBDE001DF808 /* Exercise3 */ = {
 			isa = PBXGroup;
 			children = (
+				196DE8921BF38320007A3A34 /* CustomViewController */,
+				9A427A0D1BF1F362007BFEAB /* CustomTable */,
+				9A427A0C1BF1F34A007BFEAB /* Model */,
 				9A70D3831BF1DBDE001DF808 /* AppDelegate.h */,
 				9A70D3841BF1DBDE001DF808 /* AppDelegate.m */,
 				9A70D3861BF1DBDE001DF808 /* ViewController.h */,
@@ -150,6 +194,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A70D3881BF1DBDE001DF808 /* ViewController.m in Sources */,
+				9A427A031BF1E887007BFEAB /* CustomTableViewController.m in Sources */,
+				9A427A0A1BF1F264007BFEAB /* CustomTableViewCell.m in Sources */,
+				9A427A071BF1EA03007BFEAB /* Person.m in Sources */,
+				9A427A131BF1F5D8007BFEAB /* PersonDetail.m in Sources */,
 				9A70D3851BF1DBDE001DF808 /* AppDelegate.m in Sources */,
 				9A70D3821BF1DBDE001DF808 /* main.m in Sources */,
 			);
@@ -298,6 +346,7 @@
 				9A70D3961BF1DBDE001DF808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
